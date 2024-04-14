@@ -464,7 +464,7 @@ overflows table td {
 .post-entry__content a,
 .post__content a {
   background-color: initial;
-  color: #0366d6;
+  color: var(--main-color);
   text-decoration: none;
 }
 .post-entry__content a:hover,
