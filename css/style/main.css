@@ -76,6 +76,18 @@ section {
   margin: 0 auto;
   max-width: 1024px;
 }
+.imgwithcap {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+.imgwithcap>img {
+  width: 100%;
+}
+.caption {
+  line-height: 1.2em;
+  margin-top: 6px;
+}
 .content-card {
   background-color: var(--bg-content-color);
   max-width: var(--content-width);
@@ -798,6 +810,7 @@ overflows table td {
 .post-footer__meta {
   font-size: 14px;
   margin-top: 1.5rem;
+  opacity: 0.3;
 }
 .post-footer__meta>:last-child {
   margin-bottom: 0;
