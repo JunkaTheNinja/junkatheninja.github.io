@@ -812,6 +812,9 @@ overflows table td {
   margin-top: 1.5rem;
   opacity: 0.3;
 }
+.post-footer__meta a {
+  color: var(--body-color);
+}
 .post-footer__meta>:last-child {
   margin-bottom: 0;
 }
