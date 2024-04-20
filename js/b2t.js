@@ -2,6 +2,7 @@ var requestAnimationFrame =
     window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 
 document.addEventListener('DOMContentLoaded', function () {
+    console.log('hey');
     const goTopButton = document.querySelectorAll('#b2t')[0];
     const windowViewPortHeight = window.innerHeight;
     var isRequestingAnimationFrame = false;
@@ -10,7 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
+    goTopButton.style.display = 'none';
+
     goTopButton.addEventListener('click', function () {
+    console.log('hey');
         window.scrollTo({
             top: 0,
             behavior: 'smooth',
@@ -18,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     window.addEventListener('scroll', function () {
+    console.log('hey');
         if (!isRequestingAnimationFrame) {
             requestAnimationFrame(filterGoTopButtonVisibility);
             isRequestingAnimationFrame = true;
